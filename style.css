@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bubblegum Sans", sans-serif;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(239, 208, 208);
+}
+
+#panel {
+    width: 80%;
+    height: 81%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px 0 rgba(3, 3, 3, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+#ptop {
+    padding: 0px 30%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background: rgb(225, 152, 152);
+
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+
+}
+
+.box {
+    color: #c16161;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#pbtn {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.elem h2 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(225, 152, 152);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bubble:hover {
+    background: #e97c7c;
+    transform: scale(1.5);
+}
+
+.button {
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    color: #c16161;
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: #424242;
+    font-weight: 700;
+    font-size: 20px;
+    top: 5px;
+    left: 2px;
+    position: absolute;
+    box-shadow: 0 6px 10px 0 rgba(3, 3, 3, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+    background-color: #f3d2d2;
+}
+
+#heading {
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    /* Changed to white for better contrast */
+    background: linear-gradient(135deg, #ff6f61, #d43f3a);
+    /* Gradient background */
+    border-radius: 8px;
+    /* Increased border-radius for a smoother look */
+    border: 2px solid #d43f3a;
+    /* Matching border color */
+    font-weight: 700;
+    font-size: 24px;
+    /* Increased font size for prominence */
+    position: absolute;
+    top: 6.9px;
+    /* Adjusted for better spacing */
+    center: 10px;
+    /* Adjusted for better spacing */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    /* Enhanced shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+#heading:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the heading on hover */
+    background-color: #e63946;
+    /* Slightly darker background color on hover */
+}
+
+#heading:active {
+    background-color: #d62839;
+    /* Even darker background color when clicked */
+}
+
+@media (max-width: 768px) {
+    #ptop {
+        padding: 0px 5%;
+        height: 70px;
+    }
+
+    .elem {
+        gap: 5%;
+    }
+
+    .box {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    #pbtn {
+        padding: 5px;
+        height: calc(100% - 70px);
+        gap: 8px;
+    }
+
+    .elem h2 {
+        font-size: 18px;
+    }
+
+    .bubble {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .bubble:hover {
+        transform: scale(1.3);
+    }
+
+    .button {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+    #heading {
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #ptop {
+        padding: 0px 2%;
+        height: 60px;
+    }
+
+    .elem {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    #pbtn {
+        padding: 2px;
+        height: calc(100% - 60px);
+        gap: 5px;
+    }
+
+    .elem h2 {
+        font-size: 16px;
+    }
+
+    .bubble {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .bubble:hover {
+        transform: scale(1.2);
+    }
+
+    .button {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    #heading {
+        padding: 4px 8px;
+        font-size: 18px;
+    }
+}
