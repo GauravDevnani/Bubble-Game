@@ -16,6 +16,7 @@ Responsive Design: Optimized for desktop and mobile.
 Interactive Effects: Hover and click animations enhance the experience.
 
 
+
 ✔️How to Play
 
 Start the Game: Click "START" to begin.
@@ -27,6 +28,7 @@ Score Points: Earn 10 points for each correct click.
 Watch the Timer: Game ends when time runs out.
 
 Play Again: Click "START" to try for a higher score.
+
 
 
 🧑‍💻Technologies Used
