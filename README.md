@@ -1,5 +1,5 @@
 # 🌟Bubble-Game🌟
-Here's an attractive and concise version:
+
 
 Bubble Game An interactive web game where players score points by clicking bubbles that match a target number. It features a vibrant, responsive design suitable for all devices.
 
